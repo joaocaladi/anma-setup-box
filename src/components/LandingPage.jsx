@@ -98,34 +98,17 @@ function HeroSection() {
     <section className="w-full bg-[#fbfbfd]">
       <div className="w-full max-w-[1200px] mx-auto px-6 pt-20 pb-24 lg:pt-32 lg:pb-40">
         {/* Hero Text */}
-        <div className="w-full flex flex-col items-center text-center mb-14 lg:mb-20">
+        <div className="w-full flex flex-col items-center text-center mb-10 lg:mb-14">
           <p className="text-[#bf4800] text-sm font-medium tracking-wide uppercase mb-4">
             Novidade
           </p>
           <h2 className="text-[44px] sm:text-[64px] lg:text-[96px] font-semibold text-[#1d1d1f] leading-[1.05] tracking-[-0.015em] mb-4">
             Setup-Box
           </h2>
-          <p className="text-[24px] sm:text-[32px] lg:text-[40px] font-medium text-[#1d1d1f] leading-[1.1] tracking-[-0.01em]">
+          <p className="text-[24px] sm:text-[32px] lg:text-[40px] font-medium text-[#1d1d1f] leading-[1.1] tracking-[-0.01em] mb-6">
             Abra. Surpreenda-se. Eleve seu setup.
           </p>
-        </div>
-
-        {/* Hero Image */}
-        <div className="w-full flex justify-center mb-14 lg:mb-20">
-          <div className="w-full max-w-3xl">
-            <div className="aspect-[4/3] rounded-[32px] overflow-hidden bg-gradient-to-b from-[#f5f5f7] to-[#e8e8ed] shadow-[0_8px_40px_rgba(0,0,0,0.1)]">
-              <img
-                src="https://placehold.co/900x675/f5f5f7/86868b?text=Setup-Box"
-                alt="Setup Box - Caixa premium com perifericos"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Hero CTA */}
-        <div className="w-full flex flex-col items-center text-center">
-          <p className="text-[18px] sm:text-[21px] text-[#86868b] leading-relaxed max-w-2xl mb-10">
+          <p className="text-[18px] sm:text-[21px] text-[#86868b] leading-relaxed max-w-2xl mb-8">
             Itens premium selecionados para transformar seu espaco de trabalho.
             Cada caixa e uma experiencia unica.
           </p>
@@ -142,6 +125,17 @@ function HeroSection() {
             >
               Saiba mais <ChevronRight size={20} className="ml-1" />
             </a>
+          </div>
+        </div>
+
+        {/* Hero Image */}
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-3xl">
+            <img
+              src="/hero-image.png"
+              alt="Setup Box - Caixa premium com perifericos"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
