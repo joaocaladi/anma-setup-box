@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-sans: 'Avenir Next', 'Avenir', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 html,
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: 'Avenir Next', 'Avenir', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
