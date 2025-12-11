@@ -23,7 +23,7 @@ function TopBar() {
     <div className="w-full bg-[#1d1d1f] text-[#f5f5f7]">
       <div className="w-full max-w-[1200px] mx-auto px-6 py-3 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
         <p className="text-xs sm:text-sm font-normal text-center">
-          Garantia total de satisfacao. <span className="text-white font-medium">90 dias</span> para trocas ou devolucao.
+          Garantia total de satisfação. <span className="text-white font-medium">90 dias</span> para trocas ou devolução.
         </p>
         <a
           href="https://wa.me/5500000000000"
@@ -58,8 +58,8 @@ function HeroSection() {
             Abra. Surpreenda-se. Eleve seu setup.
           </p>
           <p className="text-[18px] sm:text-[21px] text-[#86868b] leading-relaxed max-w-2xl mb-8">
-            Itens premium selecionados para transformar seu espaco de trabalho.
-            Cada caixa e uma experiencia unica.
+            Itens premium selecionados para transformar seu espaço de trabalho.
+            Cada caixa é uma experiência única.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -129,7 +129,7 @@ function PricingCard({ title, price, description, color, isPopular }) {
         <p className="text-[15px] text-[#86868b] mb-8 text-center">{description}</p>
 
         <div className="mb-10 text-center">
-          <span className="text-[12px] text-[#86868b] uppercase tracking-wider">A partir de</span>
+          <span className="text-[12px] text-[#86868b] uppercase tracking-wider">Somente</span>
           <p className="text-[48px] lg:text-[56px] font-bold text-[#1d1d1f] leading-tight tracking-tight">
             R${price}
           </p>
@@ -149,9 +149,9 @@ function PricingCard({ title, price, description, color, isPopular }) {
 
 function PricingSection() {
   const plans = [
-    { title: 'Box Bronze', price: '147', description: 'Ate 2 produtos', color: 'bronze' },
-    { title: 'Box Prata', price: '347', description: 'Ate 4 produtos', color: 'silver', isPopular: true },
-    { title: 'Box Ouro', price: '547', description: 'Ate 6 produtos', color: 'gold' }
+    { title: 'Box Bronze', price: '147', description: 'Até 2 produtos', color: 'bronze' },
+    { title: 'Box Prata', price: '347', description: 'Até 4 produtos', color: 'silver', isPopular: true },
+    { title: 'Box Ouro', price: '547', description: 'Até 6 produtos', color: 'gold' }
   ]
 
   return (
@@ -163,7 +163,7 @@ function PricingSection() {
             Escolha sua Box.
           </h2>
           <p className="text-[19px] sm:text-[21px] text-[#86868b] max-w-xl">
-            Tres opcoes pensadas para cada nivel de transformacao do seu setup.
+            Três opções pensadas para cada nível de transformação do seu setup.
           </p>
         </div>
 
@@ -219,19 +219,19 @@ function FAQSection() {
     },
     {
       question: 'Quais produtos irei receber?',
-      answer: 'Voce recebera produtos exclusivos para seu setup, incluindo itens do catalogo Anma e produtos especiais que nao estao disponiveis em nosso site.'
+      answer: 'Você receberá produtos exclusivos para seu setup, incluindo itens do catálogo Anma e produtos especiais que não estão disponíveis em nosso site.'
     },
     {
       question: 'Qual o prazo de envio?',
-      answer: 'O tempo para envio apos a confirmacao da compra e de 1 a 2 semanas. Voce recebera o codigo de rastreamento assim que o pedido for despachado.'
+      answer: 'O tempo para envio após a confirmação da compra é de 1 a 2 semanas. Você receberá o código de rastreamento assim que o pedido for despachado.'
     },
     {
       question: 'Posso devolver o produto?',
-      answer: 'Absolutamente. Alem do direito legal de 7 dias, na Anma voce tem ate 90 dias apos o recebimento para solicitar a devolucao. Compre com total tranquilidade.'
+      answer: 'Absolutamente. Além do direito legal de 7 dias, na Anma você tem até 90 dias após o recebimento para solicitar a devolução. Compre com total tranquilidade.'
     },
     {
       question: 'Vou receber produtos repetidos em compras futuras?',
-      answer: 'Nunca. Nossa equipe analisa pessoalmente o historico de cada cliente antes de montar a caixa, garantindo que voce sempre receba itens novos e diferentes.'
+      answer: 'Nunca. Nossa equipe analisa pessoalmente o histórico de cada cliente antes de montar a caixa, garantindo que você sempre receba itens novos e diferentes.'
     }
   ]
 
@@ -244,7 +244,7 @@ function FAQSection() {
             Perguntas frequentes.
           </h2>
           <p className="text-[19px] sm:text-[21px] text-[#86868b]">
-            Tudo o que voce precisa saber.
+            Tudo o que você precisa saber.
           </p>
         </div>
 
@@ -289,12 +289,12 @@ function BenefitsSection() {
     {
       icon: Sparkles,
       title: 'Itens Premium',
-      description: 'Acabamentos de alta qualidade, design ergonomico e funcional.'
+      description: 'Acabamentos de alta qualidade, design ergonômico e funcional.'
     },
     {
       icon: Gift,
       title: 'Surpresa Garantida',
-      description: 'Cada edicao traz novidades e tendencias exclusivas.'
+      description: 'Cada edição traz novidades e tendências exclusivas.'
     },
     {
       icon: Users,
@@ -304,12 +304,12 @@ function BenefitsSection() {
     {
       icon: Palette,
       title: 'Variedade',
-      description: 'De suportes a luzes LED, decoracao e organizadores.'
+      description: 'De Suportes a bandejas, organizadores e itens únicos.'
     },
     {
       icon: Handshake,
       title: 'Parcerias Exclusivas',
-      description: 'Edicoes limitadas de marcas parceiras.'
+      description: 'Edições limitadas de marcas parceiras.'
     },
     {
       icon: ShieldCheck,
@@ -319,12 +319,12 @@ function BenefitsSection() {
     {
       icon: Package,
       title: 'Brindes Surpresa',
-      description: 'Adesivos, posters e cupons em edicoes especiais.'
+      description: 'Edições especiais, itens únicos que você não encontra em nenhum outro lugar.'
     },
     {
       icon: Rocket,
       title: 'Acesso VIP',
-      description: 'Receba itens antes do lancamento oficial.'
+      description: 'Receba itens antes do lançamento oficial.'
     }
   ]
 
@@ -334,10 +334,10 @@ function BenefitsSection() {
         {/* Section Header */}
         <div className="w-full flex flex-col items-center text-center mb-16 lg:mb-24">
           <h2 className="text-[36px] sm:text-[48px] lg:text-[56px] font-semibold text-[#1d1d1f] leading-[1.1] tracking-[-0.02em] mb-5">
-            Por que a Setup Box.
+            Por que a Setups Box.
           </h2>
           <p className="text-[19px] sm:text-[21px] text-[#86868b] max-w-xl">
-            Cada detalhe pensado para elevar sua experiencia.
+            Cada detalhe pensado para elevar sua experiência.
           </p>
         </div>
 
@@ -364,7 +364,7 @@ function CTASection() {
             Pronto para transformar seu setup?
           </h2>
           <p className="text-[19px] sm:text-[21px] text-[#86868b] mb-12 max-w-xl">
-            Escolha sua Box e receba itens incriveis em casa.
+            Escolha sua Box e receba itens incríveis em casa.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <a
@@ -405,11 +405,11 @@ function Footer() {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="mailto:contato@anmasetups.com"
+                  href="mailto:contato@setupsbox.com"
                   className="flex items-center gap-2 text-[15px] text-[#424245] hover:text-[#0071e3] transition-colors"
                 >
                   <Mail size={16} />
-                  contato@anmasetups.com
+                  contato@setupsbox.com
                 </a>
                 <a
                   href="https://wa.me/5500000000000"
@@ -425,11 +425,11 @@ function Footer() {
 
             <div className="flex flex-col items-center md:items-start">
               <h3 className="text-[13px] font-semibold text-[#1d1d1f] uppercase tracking-wider mb-5">
-                Horario de Atendimento
+                Horário de Atendimento
               </h3>
               <div className="space-y-2 text-[15px] text-[#424245] text-center md:text-left">
                 <p>Segunda a Sexta-feira</p>
-                <p>9h as 11h | 13h as 17h</p>
+                <p>9h às 11h | 14h às 17h</p>
                 <p className="text-[#86868b] text-[13px] mt-4">
                   Exceto feriados
                 </p>
@@ -441,7 +441,7 @@ function Footer() {
                 Suporte via WhatsApp
               </h3>
               <p className="text-[15px] text-[#424245] mb-5 text-center md:text-left">
-                Atendimento em 3 periodos: inicio da manha, comeco da tarde e final da tarde.
+                Atendimento em 3 períodos: início da manhã, começo da tarde e final da tarde.
               </p>
               <a
                 href="https://wa.me/5500000000000"
