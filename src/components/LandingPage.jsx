@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import {
   MessageCircle,
-  User,
-  ShoppingBag,
   ChevronDown,
   ChevronRight,
   Sparkles,
@@ -42,68 +40,19 @@ function TopBar() {
 }
 
 /* ============================================
-   HEADER - Navigation (Apple Style)
-   ============================================ */
-function Header() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  return (
-    <header
-      className={`w-full sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-[rgba(251,251,253,0.8)] backdrop-blur-xl backdrop-saturate-[180%] border-b border-[rgba(0,0,0,0.08)]'
-          : 'bg-[#fbfbfd]'
-      }`}
-    >
-      <div className="w-full max-w-[1200px] mx-auto px-6">
-        <nav className="h-14 flex items-center justify-between">
-          <div className="flex-1" />
-
-          <h1 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
-            ANMA
-          </h1>
-
-          <div className="flex-1 flex items-center justify-end gap-5">
-            <button
-              className="text-[#1d1d1f] hover:text-[#86868b] transition-colors duration-300"
-              aria-label="Minha conta"
-            >
-              <User size={18} strokeWidth={1.5} />
-            </button>
-            <button
-              className="flex items-center gap-2 text-[#1d1d1f] hover:text-[#86868b] transition-colors duration-300"
-              aria-label="Carrinho"
-            >
-              <ShoppingBag size={18} strokeWidth={1.5} />
-              <span className="text-xs font-medium">R$ 0,00</span>
-            </button>
-          </div>
-        </nav>
-      </div>
-    </header>
-  )
-}
-
-/* ============================================
    HERO SECTION - Main Visual
    ============================================ */
 function HeroSection() {
   return (
     <section className="w-full bg-[#fbfbfd]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 pt-20 pb-24 lg:pt-32 lg:pb-40">
+      <div className="w-full max-w-[1200px] mx-auto px-6 pt-8 pb-24 lg:pt-12 lg:pb-40">
         {/* Hero Text */}
         <div className="w-full flex flex-col items-center text-center mb-10 lg:mb-14">
           <p className="text-[#bf4800] text-sm font-medium tracking-wide uppercase mb-4">
             Novidade
           </p>
           <h2 className="text-[44px] sm:text-[64px] lg:text-[96px] font-semibold text-[#1d1d1f] leading-[1.05] tracking-[-0.015em] mb-4">
-            Setup-Box
+            Setups Box
           </h2>
           <p className="text-[24px] sm:text-[32px] lg:text-[40px] font-medium text-[#1d1d1f] leading-[1.1] tracking-[-0.01em] mb-6">
             Abra. Surpreenda-se. Eleve seu setup.
@@ -533,7 +482,6 @@ export default function LandingPage() {
   return (
     <div className="w-full min-h-screen bg-[#fbfbfd]">
       <TopBar />
-      <Header />
       <main className="w-full">
         <HeroSection />
         <PricingSection />
