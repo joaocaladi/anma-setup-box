@@ -497,9 +497,9 @@ function Footer() {
             Copyright &copy; {new Date().getFullYear()} ANMA Setups. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
+            <Link to="/termos" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
               Termos de Uso
-            </a>
+            </Link>
             <Link to="/privacidade" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
               Privacidade
             </Link>
