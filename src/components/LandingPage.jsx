@@ -252,6 +252,14 @@ function FAQSection() {
     {
       question: 'Posso receber itens que não vou usar?',
       answer: 'Dificilmente isso vai acontecer, tomamos todo o cuidado para por exemplo, se você não usa Apple Watch não enviar um suporte para carregador de Apple Watch, se você não usa HeadSet, não enviar um Suporte para HeadSet. É através do seu histórico com a Anma e a Setups Box e as imagens do seu espaço, que podemos pedir ou não, que eliminamos a possibilidade de enviar itens que você não vai usar.'
+    },
+    {
+      question: 'A Setups Box é uma assinatura?',
+      answer: 'Não, você paga apenas uma vez, é como comprar um produto, ou seja, a cobrança não é recorrente, pode comprar quantas desejar, quantas vezes desejar, sempre que adquirir uma Setups Box vai receber apenas a cobrança da que comprou.'
+    },
+    {
+      question: 'Se eu comprar mais que uma Setups Box no mesmo dia vou receber itens repetidos?',
+      answer: 'Não, se comprar mais que uma Setups Box no mesmo momento vai receber itens diferentes, se comprar em dias diferentes vai receber itens diferentes. Sempre estamos atentos ao seu histórico de compras.'
     }
   ]
 
