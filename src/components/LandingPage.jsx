@@ -260,6 +260,10 @@ function FAQSection() {
     {
       question: 'Se eu comprar mais que uma Setups Box no mesmo dia vou receber itens repetidos?',
       answer: 'Não, se comprar mais que uma Setups Box no mesmo momento vai receber itens diferentes, se comprar em dias diferentes vai receber itens diferentes. Sempre estamos atentos ao seu histórico de compras.'
+    },
+    {
+      question: 'Posso escolher algum item?',
+      answer: 'Não é possível escolher os produtos, sempre vai ser uma surpresa.'
     }
   ]
 
