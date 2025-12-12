@@ -100,7 +100,8 @@ function PricingCard({ title, price, description, color, isPopular }) {
   const gradients = {
     bronze: 'from-[#cd7f32] via-[#b87333] to-[#8b5a2b]',
     silver: 'from-[#c0c0c0] via-[#a8a8a8] to-[#808080]',
-    gold: 'from-[#ffd700] via-[#ffcc00] to-[#daa520]'
+    gold: 'from-[#ffd700] via-[#ffcc00] to-[#daa520]',
+    diamond: 'from-[#b9f2ff] via-[#89cff0] to-[#0071e3]'
   }
 
   return (
@@ -113,7 +114,7 @@ function PricingCard({ title, price, description, color, isPopular }) {
     >
       {isPopular && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <span className="inline-flex items-center h-8 px-5 bg-[#0071e3] text-white text-[12px] font-semibold uppercase tracking-wider rounded-full shadow-lg">
+          <span className="inline-flex items-center h-8 px-5 bg-[#0071e3] text-white text-[12px] font-semibold uppercase tracking-wider rounded-full shadow-lg whitespace-nowrap">
             Mais vendida
           </span>
         </div>
@@ -151,8 +152,9 @@ function PricingCard({ title, price, description, color, isPopular }) {
 function PricingSection() {
   const plans = [
     { title: 'Box Bronze', price: '147', description: 'Até 2 produtos', color: 'bronze' },
-    { title: 'Box Prata', price: '347', description: 'Até 4 produtos', color: 'silver', isPopular: true },
-    { title: 'Box Ouro', price: '547', description: 'Até 6 produtos', color: 'gold' }
+    { title: 'Box Prata', price: '347', description: 'Até 4 produtos', color: 'silver' },
+    { title: 'Box Ouro', price: '547', description: 'Até 6 produtos', color: 'gold', isPopular: true },
+    { title: 'Box Diamante', price: '997', description: 'Até 10 produtos', color: 'diamond' }
   ]
 
   return (
@@ -164,13 +166,13 @@ function PricingSection() {
             Escolha sua Box.
           </h2>
           <p className="text-[19px] sm:text-[21px] text-[#86868b] max-w-xl">
-            Três opções pensadas para cada nível de transformação do seu setup.
+            Quatro opções pensadas para cada nível de transformação do seu setup.
           </p>
         </div>
 
         {/* Cards Grid */}
         <div className="w-full flex justify-center">
-          <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+          <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {plans.map((plan, index) => (
               <PricingCard key={index} {...plan} />
             ))}
