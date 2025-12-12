@@ -232,6 +232,18 @@ function FAQSection() {
     {
       question: 'Vou receber produtos repetidos em compras futuras?',
       answer: 'Nunca. Nossa equipe analisa pessoalmente o histórico de cada cliente antes de montar a caixa, garantindo que você sempre receba itens novos e diferentes.'
+    },
+    {
+      question: 'Posso receber produtos de valor estimado menor do que paguei?',
+      answer: 'Não, você nunca vai receber um valor estimado menor do que pagou, pelo contrário, você sempre vai receber um valor estimado maior comparado a comprar os produtos separados.'
+    },
+    {
+      question: 'Como vocês vão saber o que mais combina com meu espaço?',
+      answer: 'Além de olhar o seu histórico de compras na Anma e na Setups Box, nós podemos pedir para você nos enviar uma imagem do seu espaço, para entender melhor o que combina.'
+    },
+    {
+      question: 'Posso receber itens que não vou usar?',
+      answer: 'Dificilmente isso vai acontecer, tomamos todo o cuidado para por exemplo, se você não usa Apple Watch não enviar um suporte para carregador de Apple Watch, se você não usa HeadSet, não enviar um Suporte para HeadSet. É através do seu histórico com a Anma e a Setups Box e as imagens do seu espaço, que podemos pedir ou não, que eliminamos a possibilidade de enviar itens que você não vai usar.'
     }
   ]
 
