@@ -96,7 +96,7 @@ function HeroSection() {
 /* ============================================
    PRICING SECTION - Product Cards
    ============================================ */
-function PricingCard({ title, price, description, color, isPopular }) {
+function PricingCard({ title, price, description, color, isPopular, link }) {
   const gradients = {
     bronze: 'from-[#cd7f32] via-[#b87333] to-[#8b5a2b]',
     silver: 'from-[#c0c0c0] via-[#a8a8a8] to-[#808080]',
@@ -137,13 +137,18 @@ function PricingCard({ title, price, description, color, isPopular }) {
           </p>
         </div>
 
-        <button className={`w-full h-[56px] rounded-full text-[17px] font-semibold transition-all duration-300 ${
-          isPopular
-            ? 'bg-[#0071e3] hover:bg-[#0077ed] text-white shadow-lg shadow-blue-500/25'
-            : 'bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f]'
-        }`}>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`w-full h-[56px] rounded-full text-[17px] font-semibold transition-all duration-300 flex items-center justify-center ${
+            isPopular
+              ? 'bg-[#0071e3] hover:bg-[#0077ed] text-white shadow-lg shadow-blue-500/25'
+              : 'bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f]'
+          }`}
+        >
           Comprar
-        </button>
+        </a>
       </div>
     </div>
   )
@@ -151,10 +156,10 @@ function PricingCard({ title, price, description, color, isPopular }) {
 
 function PricingSection() {
   const plans = [
-    { title: 'Box Bronze', price: '147', description: 'Até 2 produtos', color: 'bronze' },
-    { title: 'Box Prata', price: '347', description: 'Até 4 produtos', color: 'silver' },
-    { title: 'Box Ouro', price: '547', description: 'Até 6 produtos', color: 'gold', isPopular: true },
-    { title: 'Box Diamante', price: '997', description: 'Até 10 produtos', color: 'diamond' }
+    { title: 'Box Bronze', price: '147', description: 'Até 2 produtos', color: 'bronze', link: 'https://seguro.anmasetups.com/r/1SSDV6V0XV' },
+    { title: 'Box Prata', price: '347', description: 'Até 4 produtos', color: 'silver', link: 'https://seguro.anmasetups.com/r/KW5ZZRQJD9' },
+    { title: 'Box Ouro', price: '547', description: 'Até 6 produtos', color: 'gold', isPopular: true, link: 'https://seguro.anmasetups.com/r/4I6H7TD490' },
+    { title: 'Box Diamante', price: '997', description: 'Até 10 produtos', color: 'diamond', link: 'https://seguro.anmasetups.com/r/AJQYU6GG70' }
   ]
 
   return (
@@ -218,7 +223,7 @@ function FAQSection() {
   const faqs = [
     {
       question: 'Quantos produtos vem na caixa?',
-      answer: 'A quantidade varia conforme o plano escolhido: Bronze inclui de 1 a 2 produtos, Prata de 1 a 4 produtos e Ouro de 1 a 6 produtos premium.'
+      answer: 'A quantidade varia conforme o plano escolhido: Bronze inclui de 1 a 2 produtos, Prata de 1 a 4 produtos, Ouro de 1 a 6 produtos e Diamante de 1 a 10 produtos.'
     },
     {
       question: 'Quais produtos irei receber?',
