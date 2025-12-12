@@ -58,7 +58,8 @@ function HeroSection() {
             Abra. Surpreenda-se. Eleve seu setup.
           </p>
           <p className="text-[18px] sm:text-[21px] text-[#86868b] leading-relaxed max-w-2xl mb-8">
-            Itens premium selecionados para transformar seu espaço de trabalho.
+            Itens premium selecionados para transformar seu espaço.
+            <br />
             Cada caixa é uma experiência única.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
