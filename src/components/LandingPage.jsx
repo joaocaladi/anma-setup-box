@@ -65,13 +65,13 @@ function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#pricing"
+              href="#precos"
               className="inline-flex items-center justify-center h-[52px] px-8 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[17px] font-medium rounded-full transition-all duration-300 shadow-lg shadow-blue-500/20"
             >
               Escolher minha Box
             </a>
             <a
-              href="#benefits"
+              href="#beneficios"
               className="inline-flex items-center justify-center h-[52px] px-8 text-[#0071e3] text-[17px] font-medium hover:underline transition-all duration-300"
             >
               Saiba mais <ChevronRight size={20} className="ml-1" />
@@ -164,7 +164,7 @@ function PricingSection() {
   ]
 
   return (
-    <section id="pricing" className="w-full bg-[#f5f5f7]">
+    <section id="precos" className="w-full bg-[#f5f5f7]">
       <div className="w-full max-w-[1200px] mx-auto px-6 py-24 lg:py-40">
         {/* Section Header */}
         <div className="w-full flex flex-col items-center text-center mb-16 lg:mb-24">
@@ -362,7 +362,7 @@ function BenefitsSection() {
   ]
 
   return (
-    <section id="benefits" className="w-full bg-[#f5f5f7]">
+    <section id="beneficios" className="w-full bg-[#f5f5f7]">
       <div className="w-full max-w-[1200px] mx-auto px-6 py-24 lg:py-40">
         {/* Section Header */}
         <div className="w-full flex flex-col items-center text-center mb-16 lg:mb-24">
@@ -401,7 +401,7 @@ function CTASection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <a
-              href="#pricing"
+              href="#precos"
               className="inline-flex items-center justify-center h-[56px] px-10 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[17px] font-semibold rounded-full transition-all duration-300 shadow-lg shadow-blue-500/30"
             >
               Comprar agora
