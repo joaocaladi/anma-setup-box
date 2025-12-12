@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   MessageCircle,
   ChevronDown,
@@ -499,9 +500,9 @@ function Footer() {
             <a href="#" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
               Termos de Uso
             </a>
-            <a href="#" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
+            <Link to="/privacidade" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
               Privacidade
-            </a>
+            </Link>
           </div>
         </div>
       </div>
