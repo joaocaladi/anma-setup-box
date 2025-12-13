@@ -545,18 +545,28 @@ function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-[13px] text-[#86868b]">
-            Copyright &copy; {new Date().getFullYear()} ANMA Setups. Todos os direitos reservados.
-          </p>
-          <div className="flex items-center gap-6">
-            <Link to="/termos" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
-              Termos de Uso
-            </Link>
-            <Link to="/privacidade" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
-              Privacidade
-            </Link>
+        {/* Copyright & Company Info */}
+        <div className="py-6 border-t border-[#e8e8ed] flex flex-col items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-4">
+            <p className="text-[13px] text-[#86868b]">
+              Copyright &copy; {new Date().getFullYear()} ANMA Setups. Todos os direitos reservados.
+            </p>
+            <div className="flex items-center gap-6">
+              <Link to="/termos" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
+                Termos de Uso
+              </Link>
+              <Link to="/privacidade" className="text-[13px] text-[#424245] hover:text-[#0071e3] transition-colors">
+                Privacidade
+              </Link>
+            </div>
+          </div>
+          <div className="text-center">
+            <p className="text-[11px] text-[#86868b] leading-relaxed">
+              Anma, SetupsBox – iMadeirando LTDA | CNPJ: 58.442.576/0001-99
+            </p>
+            <p className="text-[11px] text-[#86868b] leading-relaxed">
+              Rua Pedro João Pereira, 1195 – Mato Alto – Araranguá, Santa Catarina, CEP 88904-150
+            </p>
           </div>
         </div>
       </div>
